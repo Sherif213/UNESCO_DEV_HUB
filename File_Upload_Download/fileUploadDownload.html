@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="aydin University" href="images/IAU.png" />
+    <title>UNESCO APPLICATION FORM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form
+          id="myForm"
+          action="/submit.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+        <!-- This is the new container. I'm using the same styling from previous information-container -->
+          <div class="information-container5">
+            <div class="container-headline1">
+              <img src="#" alt="Texture Image" class="texture-image2" />
+              <h2 class="headline1">File Procedures</h2>
+            </div>
+
+            <!-- Upper section -->
+            <!-- Added Bootstrap styling rather than creating a CSS file. A CSS file can be created later -->
+            <div class="top-section3 fw-bold">
+              <label for="download_file">Download consent file</label>
+              <span>
+                <a
+                  download="Cat_pic"
+                  href="#"
+                  id="download_file"
+                  class="text-info"
+                  >Download file</a
+                >
+              </span>
+
+              <div>
+                <span id="downloadStatus" class="text-danger">
+                  Not downloaded
+                </span>
+                <i class="bi bi-x-circle text-danger" id="down-check-icon"></i>
+              </div>
+            </div>
+
+            <!-- Bottom section -->
+            <!-- Added Bootstrap styling rather than creating a CSS file. A CSS file can be created later -->
+            <div class="top-section3 mb-0 fw-bold">
+              <label for="upload_file" class="mb-1">Upload consent file</label>
+              <input
+                type="file"
+                class="form-control"
+                id="upload_file"
+                name="upload_file"
+                required
+              />
+              <div>
+                <span id="uploadStatus" class="text-danger">
+                  Not Uploaded
+                </span>
+                <i class="bi bi-x-circle text-danger" id="up-check-icon"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="information-container8">
+            <div class="button-section">
+              <button type="submit" id="submitBtn" class="btn btn-success" disabled>
+                Submit Application
+              </button>
+              <button type="reset" id="resetBtn" class="btn btn-danger">Reset Field</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/File_Upload_Download/logic.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"8d6a9d556e19721e","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.1","token":"79f552838f6e4b58b7206fa23ddb102a"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
