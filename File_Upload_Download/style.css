@@ -1,0 +1,113 @@
+/* Wrapper */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Container */
+.container {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.information-container, .information-container2, .information-container3, .information-container4, .information-container5, .information-container6, .information-container7, .information-container8, .information-container9 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-headline1 {
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.container-headline, .container-headline1 {
+    background-color: #43766C;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Div */
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* Both Top and Bottom */
+.top-section3, .bottom-section3 {
+    margin-bottom: 20px;
+}
+
+/* Bottom section */
+.bottom-section3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Top section */
+.top-section3 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Both side section */
+.left-section, .right-section, .left-section2, .right-section2, .left-section3, .right-section3, .bottom-section1 {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+.left-section3, .right-section3 {
+    width: calc(50% - 5px);
+}
+.left-section3, .right-section3 {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+/* Left section */
+.left-section3 {
+    margin-right: 4%;
+}
+
+/* Right section */
+.right-section3 {
+    margin-left: 10px;
+}
+
